@@ -38,3 +38,15 @@ function findMultiples(aval, bval, nval) {
 
 const totalFinal = findMultiples(a,b,n);
 alert('multiples of a or b below n : '+totalFinal);
+
+// 3.
+function findMultiplesViaInput() {
+    let inputTextA = document.getElementById('userInputA').value;
+    let inputTextB = document.getElementById('userInputB').value;
+    let inputTextN = document.getElementById('userInputN').value;
+    total = 0;
+    for (i = 0; i < inputTextN; i++) {
+        if (i % inputTextA == 0 || i % inputTextB == 0) total += i;
+    };
+     alert('Your answer is '+total);
+}
