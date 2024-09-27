@@ -11,6 +11,10 @@ The sum of these multiples is 23.
 and alert them to the output
 */
 alert("Loaded Euler JS");
+
+// answers
+
+// 1.
 a=3;
 b=5;
 n = 1000;
@@ -19,4 +23,11 @@ for (i = 0; i < n; i++) {
     if (i % a == 0 || i % b == 0) total += i;
 };
 
-alert('Find the sum of all the multiples of 3 or 5 below 1000 : ',total);
+alert('Find the sum of all the multiples of 3 or 5 below 1000 : ' + total);
+
+
+// 2.
+
+function findMultiples(a,b,n) {
+    
+}
