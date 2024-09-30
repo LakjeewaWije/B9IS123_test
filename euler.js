@@ -51,3 +51,7 @@ function findMultiplesViaInput() {
      alert('Your answer is '+total);
      document.getElementById('answer').innerHTML = total;
 }
+
+function clearMultiplesViaInputAnswer() {
+    document.getElementById('answer').innerHTML = '';
+}
