@@ -49,4 +49,5 @@ function findMultiplesViaInput() {
         if (i % inputTextA == 0 || i % inputTextB == 0) total += i;
     };
      alert('Your answer is '+total);
+     document.getElementById('answer').innerHTML = total;
 }
