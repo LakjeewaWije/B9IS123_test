@@ -34,4 +34,4 @@ function sumOfMultiples(valA, valB, list) {
     alert(`sum of ${l.toString()} : `,sum);
 }
 
-sumOfMultiples();
+sumOfMultiples(a,b,l);
