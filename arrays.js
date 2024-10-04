@@ -21,7 +21,7 @@ alert("Array Js loaded");
 
 a = 3;
 b = 5;
-l = [1,3,6,7,8]
+l = [1,3,6,7,8,10]
 function sumOfMultiples(valA, valB, list) {
     sum = 0;
     for (let index = 0; index < list.length; index++) {
@@ -31,7 +31,7 @@ function sumOfMultiples(valA, valB, list) {
 
     }
 
-    alert(`sum of ${l.toString()} : `,sum);
+    alert(`sum of ${l.toString()} : ${sum}`);
 }
 
 sumOfMultiples(a,b,l);
