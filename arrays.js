@@ -21,7 +21,7 @@ alert("Array Js loaded");
 
 a = 3;
 b = 5;
-l = [1,3,6,7,8,10]
+l = [1, 3, 6, 7, 8, 10]
 function sumOfMultiples(valA, valB, list) {
     sum = 0;
     for (let index = 0; index < list.length; index++) {
@@ -34,4 +34,22 @@ function sumOfMultiples(valA, valB, list) {
     alert(`sum of ${l.toString()} : ${sum}`);
 }
 
-sumOfMultiples(a,b,l);
+sumOfMultiples(a, b, l);
+
+// 2.
+l1 = [3, 5];
+l2 = [1, 3, 6, 7, 8, 10];
+function sumOfMultiplesQuestionTwo(list1, list2) {
+    sum = 0;
+    [valA, valB] = list1;
+    for (let index = 0; index < list2.length; index++) {
+        if (list2[index] % valA == 0 || list2[index] % valB == 0) {
+            sum += list2[index];
+        }
+
+    }
+
+    alert(`sum of ${list2.toString()} : ${sum}`);
+}
+
+sumOfMultiplesQuestionTwo(l1, l2);
