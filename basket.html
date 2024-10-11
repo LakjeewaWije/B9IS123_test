@@ -9,6 +9,14 @@
     <button onclick="showTotal()">Calculate Total</button>
     <p id="totalCost"></p>
     <script>
+
+        /*
+Create a function that takes two objects,
+basket and prices as parameters
+where basket is a mapping from products (string) to quantities (number)
+and prices is a mapping from products(String) to prices (number)
+and returns the total cost of the basket
+*/
         function calculateBasketTotal(basket, prices) {
             const priceMap = new Map(prices.map(item => [item.product, item.price]));
             return basket.reduce((total, item) => {
@@ -18,15 +26,15 @@
         }
 
         const basket = [
-            { product: "apple", quantity: 3 },
-            { product: "banana", quantity: 2 },
-            { product: "orange", quantity: 5 }
+            { product: "egg", quantity: 3 },
+            { product: "rice", quantity: 2 },
+            { product: "sprite", quantity: 5 }
         ];
 
         const prices = [
-            { product: "apple", price: 0.5 },
-            { product: "banana", price: 0.75 },
-            { product: "orange", price: 0.8 }
+            { product: "egg", price: 1 },
+            { product: "rice", price: 2 },
+            { product: "sprite", price: 1 }
         ];
 
         function showTotal() {
