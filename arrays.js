@@ -65,7 +65,8 @@ function sumOfMultiplesQuestionThree(list1, list2) {
 
         for (let y = 0; y < list1.length; y++) {
             if (list2[index] % list1[y] == 0) {
-                if (list1.length == y + 1) sum += list2[index];
+                console.log(list1.length ,y + 1)
+                // if (list1.length == y + 1) sum += list2[index];
             } else {
                 break;
             }
