@@ -53,3 +53,26 @@ function sumOfMultiplesQuestionTwo(list1, list2) {
 }
 
 sumOfMultiplesQuestionTwo(l1, l2);
+
+
+// 3.
+li1 = [3, 5];
+li2 = [1, 3, 6, 7, 8, 10];
+function sumOfMultiplesQuestionTwo(list1, list2) {
+    sum = 0;
+    [valA, valB] = list1;
+    for (let index = 0; index < list2.length; index++) {
+
+        for (let y = 0; y < list1.length; y++) {
+            if (list2[index] % list1[y] == 0) {
+                if (list1.length == y + 1) sum += list2[index];
+            } else {
+                break;
+            }
+        }
+    }
+
+    alert(`sum of ${list2.toString()} : ${sum}`);
+}
+
+sumOfMultiplesQuestionTwo(li1, li2);
